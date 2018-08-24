@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testing</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Sector</th>
+            <th>Industry</th>
+        </tr>
+        {% for stock in nasdaq_stocks %}
+            <tr>
+                <td>{{ stock.symbol }}</td>
+                <td>{{ stock.name }}</td>
+                <td>{{ stock.sector }}</td>
+                <td>{{ stock.industry }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+</body>
+</html>
