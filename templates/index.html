@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testing</title>
+</head>
+<body>
+
+
+<form action={{ url_for('show_data') }} method="post">
+    Enter Stock Name: <input type="text" name="stockName"><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+
+{#    <table>#}
+{#        <tr>#}
+{#            <th>Symbol</th>#}
+{#            <th>Name</th>#}
+{#            <th>Sector</th>#}
+{#            <th>Industry</th>#}
+{#        </tr>#}
+{#        {% for stock in nasdaq_stocks %}#}
+{#            <tr>#}
+{#                <td>{{ stock.symbol }}</td>#}
+{#                <td>{{ stock.name }}</td>#}
+{#                <td>{{ stock.sector }}</td>#}
+{#                <td>{{ stock.industry }}</td>#}
+{#            </tr>#}
+{#        {% endfor %}#}
+{#    </table>#}
+
+</body>
+</html>
