@@ -1,7 +1,7 @@
 import config
 
 def get_basic_info(stock):
-
+    return None
 
 
 def calculate_score():
