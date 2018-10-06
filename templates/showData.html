@@ -6,8 +6,23 @@
 </head>
 <body>
 
+<form action={{ url_for('show_data') }} method="post">
+    Enter Stock Name: <input type="text" name="stockName"><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+
 <h1>{{ stock_name }}</h1>
-<h3>{{ basic_info }}</h3>
+<table>
+    {% for section in basic_info %}
+        <tr>
+            {% for title_value in section %}
+                <td>{{ title_value }}</td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+</table>
 
 
 </body>
